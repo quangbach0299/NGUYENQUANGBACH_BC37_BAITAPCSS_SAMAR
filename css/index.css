@@ -12,6 +12,7 @@ html {
   font-weight: 400;
   line-height: 1.6;
   color: #636363;
+  /* overflow-x: hidden; */
 
 }
 
@@ -536,6 +537,7 @@ html {
   color: #262626;
   margin-bottom: 20px;
 }
+
 .portfolio__content {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -1192,19 +1194,25 @@ footer::before {
 
 
 @media screen and (max-width: 992px) {
- 
+  * {
+    margin: 0 ;
+    padding: 0;
+  }
+
   html {
     font-size: 12px;
     text-align: center;
+    overflow-x: hidden;
   }
 
-  .container{
+  .container {
     max-width: 768px;
     margin: 0 auto;
   }
 
+
   .backToTop {
-    right: 52px;
+    right: 80px;
     bottom: 52px;
   }
 
@@ -1224,14 +1232,19 @@ footer::before {
   }
 
   .header__content {
-    justify-content: flex-start; 
+    justify-content: flex-start;
   }
 
-  .header__item a i{
-    display: none; 
+  .header__item a i {
+    display: none;
   }
 
-  .carousel__content{
+  
+  .carousel {
+    padding-top: 180px;
+  }
+
+  .carousel__content {
     display: block;
   }
 
@@ -1239,11 +1252,11 @@ footer::before {
     width: 100%;
   }
 
-  .carousel__right{
+  .carousel__right {
     width: 100%;
   }
 
-  .carousel__left .carousel__title h2{
+  .carousel__left .carousel__title h2 {
     display: inline;
     font-size: 50px;
   }
@@ -1252,63 +1265,70 @@ footer::before {
     margin: 0 auto;
   }
 
-  .services__content{
+  .services__content {
     display: block;
   }
 
-  .services__item{
+  .services__item {
     width: 70%;
     margin: auto;
     margin-bottom: 15px;
   }
 
-  .aboutus__left{
+  .aboutus__left {
     top: 80px;
     left: -8%;
   }
-  
-  .aboutus__right ul{
+
+  .aboutus__right ul {
     text-align: left;
   }
-  
-  .number__item p:nth-child(2)
-  {
+
+  .number__item p:nth-child(2) {
     font-size: 50px;
   }
 
-  .features__left .title{
+  .features__left .title {
     font-size: 45px;
   }
 
   .features__item {
     padding: 0 0px 30px 0;
   }
-  
+
   .features__item:nth-child(2) {
     padding: 0 0 30px 0px;
-  } 
+  }
 
-  .features__right{
+  .features__right {
     padding-top: 190px;
   }
 
+  .features__right img {
+    max-width: 80%;
+    ;
+  }
+
+  .features__banner {
+    margin-right: 0px;
+  }
+
+
   .plan .plan__basic {
     gap: 7px;
-  } 
-  
+    display: block;
+  }
+
   .plan .plan__basic .plan__item {
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
   }
 
   .plan .plan__basic .plan__item li {
-   
+
     font-size: 12px;
   }
 
-
-
 }
-
 
 /* phone (ngang) */
 @media screen and (max-width: 768px) {}

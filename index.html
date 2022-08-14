@@ -769,19 +769,22 @@
         $('.owl-carousel').owlCarousel({
             loop: true,
             nav: false,
-            margin: 30,
+          
             // autoplay: true,
             // autoplayTimeout: 3000,
             // autoplayHoverPause: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    margin:5,
                 },
-                600: {
-                    items: 2
+                576: {
+                    items: 1  ,
+                    margin: 15,
                 },
                 1200: {
-                    items: 3
+                    items: 3,
+                    margin: 30,
                 }
             }
         })
